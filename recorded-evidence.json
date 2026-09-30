@@ -1,20 +1,20 @@
 {
-  "disclosure": "Recorded Solana devnet evidence. Synthetic invoice and custom Test USD with no monetary value. The guided replay submits no transactions.",
+  "protocolVersion": 2,
+  "disclosure": "Guided replay of a recorded v2 Solana devnet run. Synthetic Test USD has no monetary value. Tour clicks send no transactions.",
   "provenance": {
-    "sourceSha256": "b2e1ef785a62c9bc5276d034d14283258979455a873165008176e411d77afaa2",
-    "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-    "recordedAt": "2026-09-30T18:28:25.279Z",
+    "sourceSha256": "460a554e4f6ed05e3210fa430def7ed03cfe2a6b943c309f9025ca587f0844f7",
+    "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+    "recordedAt": "2026-09-30T19:49:02.653Z",
     "projectionNotes": [
-      "Only this scenario and its seven event-linked network proofs are included.",
-      "Tour chapters reconstruct display state from these recorded events; they are not new chain observations.",
-      "One historical approval was reconciled from an exactly matched saved transaction journal after confirmation; it was not resubmitted.",
-      "Test USD is not USDC. Server-held demonstration role keys and a trusted upgrade authority were used. The program is unaudited.",
-      "Protection applies to the program-controlled payable and vault. Failed transactions can still incur devnet SOL fees."
+      "Intermediate screens are reconstructed from event prefixes, not screenshots recorded at those moments.",
+      "Balances before payment are not asserted. The paid snapshot uses the payment transaction post-token balances; final balances and return come from the completed service export.",
+      "The supplier account balance is cumulative, not this invoice payment amount. Payment and treasury return are separate transactions.",
+      "Earlier v1 tour proof is preserved separately; no v1 funds or account layouts were migrated."
     ]
   },
   "state": {
     "mode": "devnet",
-    "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
+    "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
     "revision": 2,
     "asset": {
       "symbol": "Test USD",
@@ -23,7 +23,7 @@
       "cluster": "devnet"
     },
     "invoice": {
-      "id": "inv-99e16ca7",
+      "id": "inv-f1d8485a",
       "number": "NF-2026-041",
       "supplier": "Northform Studio",
       "supplierEmail": "accounts@northform.example",
@@ -38,9 +38,9 @@
     "status": "paid",
     "creditNote": {
       "reference": "CN-204",
-      "reason": "Accepted service credit",
+      "reason": "Service adjustment agreed with supplier",
       "amount": 200,
-      "at": "2026-09-30T18:02:11.286Z"
+      "at": "2026-09-30T19:48:30.336Z"
     },
     "approvals": [
       {
@@ -49,7 +49,7 @@
         "role": "Finance lead",
         "revision": 1,
         "amount": 1000,
-        "at": "2026-09-30T18:01:35.735Z",
+        "at": "2026-09-30T19:48:18.510Z",
         "current": false
       },
       {
@@ -58,7 +58,7 @@
         "role": "Team lead",
         "revision": 1,
         "amount": 1000,
-        "at": "2026-09-30T18:01:37.268Z",
+        "at": "2026-09-30T19:48:24.191Z",
         "current": false
       },
       {
@@ -67,7 +67,7 @@
         "role": "Finance lead",
         "revision": 2,
         "amount": 800,
-        "at": "2026-09-30T18:02:41.165Z",
+        "at": "2026-09-30T19:48:45.755Z",
         "current": true
       },
       {
@@ -76,118 +76,137 @@
         "role": "Team lead",
         "revision": 2,
         "amount": 800,
-        "at": "2026-09-30T18:23:51.768Z",
+        "at": "2026-09-30T19:48:49.980Z",
         "current": true
       }
     ],
     "evidence": [
       {
-        "id": "de28b61d-1663-4848-9a5a-4f65f3531e7e",
+        "id": "81dd2fab-dabd-4c59-8074-aecf6d8be926",
         "kind": "created",
         "title": "Invoice ready for review",
         "detail": "Synthetic invoice for 1,000 Test USD. Two distinct approvals are required.",
-        "at": "2026-09-30T17:56:54.934Z",
+        "at": "2026-09-30T19:48:16.397Z",
         "actor": "Demo registrar",
         "revision": 1,
         "amount": 1000,
         "outcome": "local"
       },
       {
-        "id": "8a3f2c19-c8b8-42e8-b4e5-34df19443397",
+        "id": "7da48b79-3692-45e7-b7f2-2fcfa536f926",
         "kind": "approval",
         "title": "Mara Weber approved 1,000 Test USD",
         "detail": "Approval covers this amount, recipient and current invoice version.",
-        "at": "2026-09-30T18:01:35.735Z",
+        "at": "2026-09-30T19:48:18.527Z",
         "actor": "Mara Weber",
         "revision": 1,
         "amount": 1000,
         "outcome": "confirmed",
-        "signature": "aGjcYwND7fJqWZypFTqyQXf7XCJE3mbSPSEwCfZpFbdzY4kAyTvEuxdjzV63DHyzvbBmxtuBG5GUnQ3k42c64fn"
+        "signature": "3B1TE2KNCsh2ffUG5peKgpyL5mHJd1QjumHPsyzMih1woifbg9eYKtNwLqCBXH9W2L1PoRxC3iVEoRG98HwHbc3Y"
       },
       {
-        "id": "956209e8-0b88-49bb-ab30-8490db60d07c",
+        "id": "916bf636-bc13-4ed6-b80a-57d948561206",
         "kind": "approval",
         "title": "Jonas Berg approved 1,000 Test USD",
         "detail": "Approval covers this amount, recipient and current invoice version.",
-        "at": "2026-09-30T18:01:37.268Z",
+        "at": "2026-09-30T19:48:24.191Z",
         "actor": "Jonas Berg",
         "revision": 1,
         "amount": 1000,
         "outcome": "confirmed",
-        "signature": "5mxhFjB6fiKD91vZFbFqToirZFYzgpbfHFWqxGstznffmwYYX71bGm1WFsMxjwqHtdWhSPSzUzio7SMR8Sfj8vL7"
+        "signature": "59aWkTfYV47rgZfKtJfrc8sTsRL1R1Dpi96rcgArm9nJsm3X3y7uUPdU4ZXtWYaZFGt7mcwpALK3cJENZxV9iyXr"
       },
       {
-        "id": "cb3e6170-b2c0-423c-b420-8c4de478b8ce",
+        "id": "38d6b774-89c4-48ea-8f56-faf53973849c",
         "kind": "credit",
         "title": "200 Test USD credit applied",
-        "detail": "CN-204: Accepted service credit. Earlier approvals no longer cover the revised amount.",
-        "at": "2026-09-30T18:02:11.286Z",
+        "detail": "CN-204: Service adjustment agreed with supplier. Earlier approvals no longer cover the revised amount.",
+        "at": "2026-09-30T19:48:30.336Z",
         "actor": "Lena Fischer",
         "revision": 2,
         "amount": 200,
         "outcome": "confirmed",
-        "signature": "3FeeZSo5XaD3qRGLocaNbMw64GhdGS4HLUEfrT5fnzQNcRrH4oGCzZPxNR2sKT9QjXMdSRHFNdKHbypCbaoXLr2Q"
+        "signature": "2CGnY3Y8beJK5spw2eExn7Fwzk4nrxyxN52UvdZq7r3cJWztUgSGqHmBo4tSQmu5GtjgK9atGNJDzsACycakbnFh"
       },
       {
-        "id": "e054dfce-59e7-4a95-b4ad-ebde6babe25f",
+        "id": "15dc1ae2-7a3c-48b7-a851-d7b776a7b4ee",
         "kind": "blocked",
         "title": "Earlier payment attempt blocked",
         "detail": "Attempted 1,000 Test USD under invoice version 1. Payment program rejected it. No Test USD moved.",
-        "at": "2026-09-30T18:02:39.600Z",
+        "at": "2026-09-30T19:48:36.322Z",
         "actor": "Alex Morgan",
         "revision": 2,
         "amount": 1000,
         "outcome": "failed",
-        "signature": "5qC63WxVau6QCfTWQJNht3Qij3yQYou4to5ot16bEQGKkJnHcee4QdinmGLgo2HrEwHS9hqymwNWffHw9tYAwwUp"
+        "signature": "4LQe318u4JufLMwy3vR9BoWzQ8rjHiNPW6wC8xWBmQzc1w73R33sgGdFjFiBkniAQjnqt9FHvJNvv6nQMzC18ad3"
       },
       {
-        "id": "2cbbf02c-487e-4401-86ee-5516445aaf78",
+        "id": "1d30f900-1d94-491d-a96b-f07926c6fb49",
         "kind": "approval",
         "title": "Mara Weber approved 800 Test USD",
         "detail": "Approval covers this amount, recipient and current invoice version.",
-        "at": "2026-09-30T18:02:41.165Z",
+        "at": "2026-09-30T19:48:45.756Z",
         "actor": "Mara Weber",
         "revision": 2,
         "amount": 800,
         "outcome": "confirmed",
-        "signature": "TnXy7fp5qE9jV7uhDG4nkT2h7665Yyu3vnY3maWYeYLENCT5RteiAUtcTg8wyavPQbNeEaZvccbAP9RiTPF4duW"
+        "signature": "2rQkgtPjnxdvps1pV7sucZi98SoBertVEQCjfXqriZHJTRoBXNtrtkdiaNmrNXRuFvYbKvN7WpaXfhiEfKNh8KnS"
       },
       {
-        "id": "32f28349-84aa-4fc0-86df-912e1ace6071",
+        "id": "79807d4b-8ae3-4d7a-91fa-837d0a70b361",
         "kind": "approval",
         "title": "Jonas Berg approved 800 Test USD",
         "detail": "Approval covers this amount, recipient and current invoice version.",
-        "at": "2026-09-30T18:23:51.768Z",
+        "at": "2026-09-30T19:48:49.980Z",
         "actor": "Jonas Berg",
         "revision": 2,
         "amount": 800,
         "outcome": "confirmed",
-        "signature": "r1TtwLSN8N8DxAoyoVSfFBFhymDoECcnvhjYMXEfzYZGijfFP525X8n2g1Mn2R3jpwbdg6T3AzYP1e38FFwXGAN"
+        "signature": "3jL4oycpQ3TpEQnsFNuV6XcEwUYLsuDB4Li8wNZ5VG2ff9YBH3qRajLkVKQuspCxagRGMW9U4mSEYW1AnV8pAHGh"
       },
       {
-        "id": "e2bbff78-a013-4153-b52b-a3466c280133",
+        "id": "6187c42e-7736-4f91-abf1-9bc93390ce74",
         "kind": "payment",
         "title": "800 Test USD paid",
         "detail": "Payment confirmed for the current approved amount.",
-        "at": "2026-09-30T18:24:35.158Z",
+        "at": "2026-09-30T19:48:54.213Z",
         "actor": "Alex Morgan",
         "revision": 2,
         "amount": 800,
         "outcome": "confirmed",
-        "signature": "mEzYqsk328ch5SeDtwpjN1coekQ8fsoJcvSeReob5mrrZanATzvSRmYRLKQckTWTuyE2agiRbCdkg8m97Ly1pxL"
+        "signature": "1256NpMX9eh8r5gWkfVuMJ3sS5EfqU2hKz89NdnJA2qN1chCuLGKhQoEviRDbYKVX84ThkdD2ATM9tDqqT6TerPf"
+      },
+      {
+        "id": "3d1ad992-503e-467b-b776-e50e718a5a8b",
+        "kind": "treasury-return",
+        "title": "200 Test USD returned to treasury",
+        "detail": "Remaining reserve returned to the fixed Hamburg GmbH treasury. Supplier payment is unchanged.",
+        "at": "2026-09-30T19:48:58.434Z",
+        "actor": "Alex Morgan",
+        "revision": 2,
+        "amount": 200,
+        "outcome": "confirmed",
+        "signature": "5GrL9JnSAHWjMdNj82DvW7MbTRLveyvS73YrXQXRK67P7WkyXWwbEzXQU2UiTZMYRp72gFSAp4FKrgtvV8JnteRw"
       }
     ],
     "settlement": {
       "amount": 800,
-      "signature": "mEzYqsk328ch5SeDtwpjN1coekQ8fsoJcvSeReob5mrrZanATzvSRmYRLKQckTWTuyE2agiRbCdkg8m97Ly1pxL",
-      "at": "2026-09-30T18:24:35.158Z",
+      "signature": "1256NpMX9eh8r5gWkfVuMJ3sS5EfqU2hKz89NdnJA2qN1chCuLGKhQoEviRDbYKVX84ThkdD2ATM9tDqqT6TerPf",
+      "at": "2026-09-30T19:48:54.212Z",
       "recipient": "DPSPJw6a3LyzBSPRL2mMMzyn7gqYtKAYhxX9PszbmuQb",
+      "mode": "devnet"
+    },
+    "treasuryReturn": {
+      "amount": 200,
+      "signature": "5GrL9JnSAHWjMdNj82DvW7MbTRLveyvS73YrXQXRK67P7WkyXWwbEzXQU2UiTZMYRp72gFSAp4FKrgtvV8JnteRw",
+      "at": "2026-09-30T19:48:58.433Z",
+      "treasury": "8zyGsAJLjHoFVMTKJ75Kad9q9rc32XJEFoer7oqQpC5f",
       "mode": "devnet"
     },
     "previousInstruction": {
       "revision": 1,
       "amount": 1000,
-      "capturedAt": "2026-09-30T18:01:37.268Z",
+      "capturedAt": "2026-09-30T19:48:24.191Z",
       "tested": true,
       "outcome": "Earlier approval expired \u2014 no payment sent"
     },
@@ -215,97 +234,99 @@
       }
     ],
     "chain": {
-      "programId": "8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9",
-      "obligation": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
-      "vault": "JBrHme1rtsR2Qhgwxaday7kPefBkbMvKJ99p7VPGYwwZ",
-      "vaultBalance": 200,
-      "recipientBalance": 3400
+      "programId": "CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP",
+      "obligation": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
+      "vault": "EPtrvsKzMJnEzqpZpTfsLtVQ9Gdk6iWxXFHD58npcdnV",
+      "treasury": "8zyGsAJLjHoFVMTKJ75Kad9q9rc32XJEFoer7oqQpC5f",
+      "vaultBalance": 0,
+      "recipientBalance": 5900,
+      "treasuryBalance": 200
     }
   },
   "networkProofs": [
     {
       "action": "approve",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "aGjcYwND7fJqWZypFTqyQXf7XCJE3mbSPSEwCfZpFbdzY4kAyTvEuxdjzV63DHyzvbBmxtuBG5GUnQ3k42c64fn",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "3B1TE2KNCsh2ffUG5peKgpyL5mHJd1QjumHPsyzMih1woifbg9eYKtNwLqCBXH9W2L1PoRxC3iVEoRG98HwHbc3Y",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "aGjcYwND7fJqWZypFTqyQXf7XCJE3mbSPSEwCfZpFbdzY4kAyTvEuxdjzV63DHyzvbBmxtuBG5GUnQ3k42c64fn",
-        "slot": 505988956,
-        "blockTime": 1790791296,
+        "signature": "3B1TE2KNCsh2ffUG5peKgpyL5mHJd1QjumHPsyzMih1woifbg9eYKtNwLqCBXH9W2L1PoRxC3iVEoRG98HwHbc3Y",
+        "slot": 506016272,
+        "blockTime": 1790797701,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program log: Kontor::ApprovalRecorded revision=0 approver=0",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 12463 of 199858 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 12563 of 199850 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [],
         "postTokenBalances": []
       },
-      "recordedAt": "2026-09-30T18:01:36.822Z"
+      "recordedAt": "2026-09-30T19:48:24.182Z"
     },
     {
       "action": "approve",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "5mxhFjB6fiKD91vZFbFqToirZFYzgpbfHFWqxGstznffmwYYX71bGm1WFsMxjwqHtdWhSPSzUzio7SMR8Sfj8vL7",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "59aWkTfYV47rgZfKtJfrc8sTsRL1R1Dpi96rcgArm9nJsm3X3y7uUPdU4ZXtWYaZFGt7mcwpALK3cJENZxV9iyXr",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "5mxhFjB6fiKD91vZFbFqToirZFYzgpbfHFWqxGstznffmwYYX71bGm1WFsMxjwqHtdWhSPSzUzio7SMR8Sfj8vL7",
-        "slot": 505988963,
-        "blockTime": 1790791297,
+        "signature": "59aWkTfYV47rgZfKtJfrc8sTsRL1R1Dpi96rcgArm9nJsm3X3y7uUPdU4ZXtWYaZFGt7mcwpALK3cJENZxV9iyXr",
+        "slot": 506016299,
+        "blockTime": 1790797707,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program log: Kontor::ApprovalRecorded revision=0 approver=1",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 12466 of 199859 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 12566 of 199851 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [],
         "postTokenBalances": []
       },
-      "recordedAt": "2026-09-30T18:01:38.317Z"
+      "recordedAt": "2026-09-30T19:48:30.333Z"
     },
     {
       "action": "apply-credit",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "3FeeZSo5XaD3qRGLocaNbMw64GhdGS4HLUEfrT5fnzQNcRrH4oGCzZPxNR2sKT9QjXMdSRHFNdKHbypCbaoXLr2Q",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "2CGnY3Y8beJK5spw2eExn7Fwzk4nrxyxN52UvdZq7r3cJWztUgSGqHmBo4tSQmu5GtjgK9atGNJDzsACycakbnFh",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "3FeeZSo5XaD3qRGLocaNbMw64GhdGS4HLUEfrT5fnzQNcRrH4oGCzZPxNR2sKT9QjXMdSRHFNdKHbypCbaoXLr2Q",
-        "slot": 505989108,
-        "blockTime": 1790791331,
+        "signature": "2CGnY3Y8beJK5spw2eExn7Fwzk4nrxyxN52UvdZq7r3cJWztUgSGqHmBo4tSQmu5GtjgK9atGNJDzsACycakbnFh",
+        "slot": 506016321,
+        "blockTime": 1790797712,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program 11111111111111111111111111111111 invoke [2]",
           "Program 11111111111111111111111111111111 success",
           "Program log: Kontor::CreditAccepted amount=200000000 revision=1",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 17454 of 199861 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 17558 of 199853 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [],
         "postTokenBalances": []
       },
-      "recordedAt": "2026-09-30T18:02:12.461Z"
+      "recordedAt": "2026-09-30T19:48:36.319Z"
     },
     {
       "action": "test-previous",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "5qC63WxVau6QCfTWQJNht3Qij3yQYou4to5ot16bEQGKkJnHcee4QdinmGLgo2HrEwHS9hqymwNWffHw9tYAwwUp",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "4LQe318u4JufLMwy3vR9BoWzQ8rjHiNPW6wC8xWBmQzc1w73R33sgGdFjFiBkniAQjnqt9FHvJNvv6nQMzC18ad3",
       "confirmation": "failed",
       "evidence": {
-        "signature": "5qC63WxVau6QCfTWQJNht3Qij3yQYou4to5ot16bEQGKkJnHcee4QdinmGLgo2HrEwHS9hqymwNWffHw9tYAwwUp",
-        "slot": 505989231,
-        "blockTime": 1790791360,
+        "signature": "4LQe318u4JufLMwy3vR9BoWzQ8rjHiNPW6wC8xWBmQzc1w73R33sgGdFjFiBkniAQjnqt9FHvJNvv6nQMzC18ad3",
+        "slot": 506016360,
+        "blockTime": 1790797722,
         "error": {
           "InstructionError": [
             1,
@@ -317,29 +338,29 @@
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program log: Kontor::StaleRevision",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 9330 of 199860 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 failed: custom program error: 0x1b5a"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 7917 of 199852 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP failed: custom program error: 0x1b5a"
         ],
         "fee": 5000,
         "preTokenBalances": [
           {
-            "accountIndex": 2,
+            "accountIndex": 1,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
             "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
-              "amount": "2600000000",
+              "amount": "5100000000",
               "decimals": 6,
-              "uiAmount": 2600,
-              "uiAmountString": "2600"
+              "uiAmount": 5100,
+              "uiAmountString": "5100"
             }
           },
           {
-            "accountIndex": 3,
+            "accountIndex": 2,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-            "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
               "amount": "1000000000",
@@ -351,21 +372,21 @@
         ],
         "postTokenBalances": [
           {
-            "accountIndex": 2,
+            "accountIndex": 1,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
             "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
-              "amount": "2600000000",
+              "amount": "5100000000",
               "decimals": 6,
-              "uiAmount": 2600,
-              "uiAmountString": "2600"
+              "uiAmount": 5100,
+              "uiAmountString": "5100"
             }
           },
           {
-            "accountIndex": 3,
+            "accountIndex": 2,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-            "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
               "amount": "1000000000",
@@ -375,17 +396,17 @@
             }
           }
         ],
-        "unchangedBytesSha256": "75658981c299a42ff3cfb8984ce87998aa8dfcd44e2334fb642be888a4a4793a",
+        "unchangedBytesSha256": "ef86c4a157968cb335271bea91adba65192bbd5b32f4f7cc22b3337b95bc37f0",
         "blockhashValidBeforeSend": true,
-        "approvalExpiry": 1790794615,
-        "checkedBlockTime": 1790791359,
+        "approvalExpiry": 1790801272,
+        "checkedBlockTime": 1790797717,
         "before": {
           "vault": "1000000000",
-          "recipient": "2600000000"
+          "recipient": "5100000000"
         },
         "after": {
           "vault": "1000000000",
-          "recipient": "2600000000"
+          "recipient": "5100000000"
         },
         "tokenMovement": "0",
         "simulationBeforeRevision": {
@@ -393,7 +414,7 @@
           "err": null,
           "fee": 5000,
           "innerInstructions": null,
-          "loadedAccountsDataSize": 237414,
+          "loadedAccountsDataSize": 243542,
           "loadedAddresses": {
             "readonly": [],
             "writable": []
@@ -401,43 +422,43 @@
           "logs": [
             "Program ComputeBudget111111111111111111111111111111 invoke [1]",
             "Program ComputeBudget111111111111111111111111111111 success",
-            "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+            "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
             "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
-            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 175689 compute units",
+            "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 175467 compute units",
             "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
             "Program log: Kontor::Paid amount=1000000000 revision=0",
-            "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 25322 of 199860 compute units",
-            "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+            "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 25536 of 199852 compute units",
+            "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
           ],
           "postBalances": [
-            29965000,
-            1305560,
+            29945000,
             1488440,
             1488440,
-            833120,
-            1828800,
-            1,
-            1066800,
+            1630680,
             1752600,
+            1,
+            833120,
+            1066800,
+            1828800,
             20369267856
           ],
           "postTokenBalances": [
             {
-              "accountIndex": 2,
+              "accountIndex": 1,
               "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
               "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
               "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
               "uiTokenAmount": {
-                "amount": "3600000000",
+                "amount": "6100000000",
                 "decimals": 6,
-                "uiAmount": 3600,
-                "uiAmountString": "3600"
+                "uiAmount": 6100,
+                "uiAmountString": "6100"
               }
             },
             {
-              "accountIndex": 3,
+              "accountIndex": 2,
               "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-              "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+              "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
               "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
               "uiTokenAmount": {
                 "amount": "0",
@@ -448,34 +469,34 @@
             }
           ],
           "preBalances": [
-            29970000,
-            1305560,
+            29950000,
             1488440,
             1488440,
-            833120,
-            1828800,
-            1,
-            1066800,
+            1630680,
             1752600,
+            1,
+            833120,
+            1066800,
+            1828800,
             20369267856
           ],
           "preTokenBalances": [
             {
-              "accountIndex": 2,
+              "accountIndex": 1,
               "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
               "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
               "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
               "uiTokenAmount": {
-                "amount": "2600000000",
+                "amount": "5100000000",
                 "decimals": 6,
-                "uiAmount": 2600,
-                "uiAmountString": "2600"
+                "uiAmount": 5100,
+                "uiAmountString": "5100"
               }
             },
             {
-              "accountIndex": 3,
+              "accountIndex": 2,
               "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-              "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+              "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
               "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
               "uiTokenAmount": {
                 "amount": "1000000000",
@@ -487,104 +508,98 @@
           ],
           "replacementBlockhash": null,
           "returnData": null,
-          "unitsConsumed": 25472
+          "unitsConsumed": 25686
         }
       },
-      "recordedAt": "2026-09-30T18:02:40.899Z"
+      "recordedAt": "2026-09-30T19:48:45.752Z"
     },
     {
       "action": "approve",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "TnXy7fp5qE9jV7uhDG4nkT2h7665Yyu3vnY3maWYeYLENCT5RteiAUtcTg8wyavPQbNeEaZvccbAP9RiTPF4duW",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "2rQkgtPjnxdvps1pV7sucZi98SoBertVEQCjfXqriZHJTRoBXNtrtkdiaNmrNXRuFvYbKvN7WpaXfhiEfKNh8KnS",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "TnXy7fp5qE9jV7uhDG4nkT2h7665Yyu3vnY3maWYeYLENCT5RteiAUtcTg8wyavPQbNeEaZvccbAP9RiTPF4duW",
-        "slot": 505989237,
-        "blockTime": 1790791361,
+        "signature": "2rQkgtPjnxdvps1pV7sucZi98SoBertVEQCjfXqriZHJTRoBXNtrtkdiaNmrNXRuFvYbKvN7WpaXfhiEfKNh8KnS",
+        "slot": 506016380,
+        "blockTime": 1790797726,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program log: Kontor::ApprovalRecorded revision=1 approver=0",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 10964 of 199862 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 9564 of 199854 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [],
         "postTokenBalances": []
       },
-      "recordedAt": "2026-09-30T18:22:53.709Z",
-      "reconciled": true,
-      "legacyBinding": {
-        "kind": "controller-attested-legacy-binding",
-        "at": "2026-09-30T18:20:39.523Z"
-      },
-      "provenanceNote": "Controller matched the preserved historical signed transaction to the pending approval before read-only reconciliation. This is a later legacy binding, not a claim of pre-submission intent capture."
+      "recordedAt": "2026-09-30T19:48:49.977Z"
     },
     {
       "action": "approve",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "r1TtwLSN8N8DxAoyoVSfFBFhymDoECcnvhjYMXEfzYZGijfFP525X8n2g1Mn2R3jpwbdg6T3AzYP1e38FFwXGAN",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "3jL4oycpQ3TpEQnsFNuV6XcEwUYLsuDB4Li8wNZ5VG2ff9YBH3qRajLkVKQuspCxagRGMW9U4mSEYW1AnV8pAHGh",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "r1TtwLSN8N8DxAoyoVSfFBFhymDoECcnvhjYMXEfzYZGijfFP525X8n2g1Mn2R3jpwbdg6T3AzYP1e38FFwXGAN",
-        "slot": 505994652,
-        "blockTime": 1790792632,
+        "signature": "3jL4oycpQ3TpEQnsFNuV6XcEwUYLsuDB4Li8wNZ5VG2ff9YBH3qRajLkVKQuspCxagRGMW9U4mSEYW1AnV8pAHGh",
+        "slot": 506016398,
+        "blockTime": 1790797730,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program log: Kontor::ApprovalRecorded revision=1 approver=1",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 10967 of 199850 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 9567 of 199855 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [],
         "postTokenBalances": []
       },
-      "recordedAt": "2026-09-30T18:23:55.310Z"
+      "recordedAt": "2026-09-30T19:48:54.209Z"
     },
     {
       "action": "pay",
-      "scenarioId": "c3f46241-966e-4264-ac88-035ed095ca23",
-      "signature": "mEzYqsk328ch5SeDtwpjN1coekQ8fsoJcvSeReob5mrrZanATzvSRmYRLKQckTWTuyE2agiRbCdkg8m97Ly1pxL",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "1256NpMX9eh8r5gWkfVuMJ3sS5EfqU2hKz89NdnJA2qN1chCuLGKhQoEviRDbYKVX84ThkdD2ATM9tDqqT6TerPf",
       "confirmation": "confirmed",
       "evidence": {
-        "signature": "mEzYqsk328ch5SeDtwpjN1coekQ8fsoJcvSeReob5mrrZanATzvSRmYRLKQckTWTuyE2agiRbCdkg8m97Ly1pxL",
-        "slot": 505994837,
-        "blockTime": 1790792675,
+        "signature": "1256NpMX9eh8r5gWkfVuMJ3sS5EfqU2hKz89NdnJA2qN1chCuLGKhQoEviRDbYKVX84ThkdD2ATM9tDqqT6TerPf",
+        "slot": 506016416,
+        "blockTime": 1790797735,
         "error": null,
         "logs": [
           "Program ComputeBudget111111111111111111111111111111 invoke [1]",
           "Program ComputeBudget111111111111111111111111111111 success",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 invoke [1]",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
           "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
-          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 177180 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 178471 compute units",
           "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
           "Program log: Kontor::Paid amount=800000000 revision=1",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 consumed 23814 of 199851 compute units",
-          "Program 8ZgASzPtuNQote1grs4TsPATVqdkCnjZnYTkzTiBUgE9 success"
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 22528 of 199856 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
         ],
         "fee": 5000,
         "preTokenBalances": [
           {
-            "accountIndex": 2,
+            "accountIndex": 1,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
             "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
-              "amount": "2600000000",
+              "amount": "5100000000",
               "decimals": 6,
-              "uiAmount": 2600,
-              "uiAmountString": "2600"
+              "uiAmount": 5100,
+              "uiAmountString": "5100"
             }
           },
           {
-            "accountIndex": 3,
+            "accountIndex": 2,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-            "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
               "amount": "1000000000",
@@ -596,21 +611,21 @@
         ],
         "postTokenBalances": [
           {
-            "accountIndex": 2,
+            "accountIndex": 1,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
             "owner": "EfdyQCSiX9RVeZt1bg9rfMwadznqX5B3N7ahjfZTMnix",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
-              "amount": "3400000000",
+              "amount": "5900000000",
               "decimals": 6,
-              "uiAmount": 3400,
-              "uiAmountString": "3400"
+              "uiAmount": 5900,
+              "uiAmountString": "5900"
             }
           },
           {
-            "accountIndex": 3,
+            "accountIndex": 2,
             "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
-            "owner": "55RMd3nHEVaGognxKWs21JAse2Xp7UTohJfevuWenW4S",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
             "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
             "uiTokenAmount": {
               "amount": "200000000",
@@ -621,7 +636,84 @@
           }
         ]
       },
-      "recordedAt": "2026-09-30T18:24:38.699Z"
+      "recordedAt": "2026-09-30T19:48:58.430Z"
+    },
+    {
+      "action": "release-remainder",
+      "scenarioId": "12a9ddab-2484-41ba-89b3-9654e824a0d8",
+      "signature": "5GrL9JnSAHWjMdNj82DvW7MbTRLveyvS73YrXQXRK67P7WkyXWwbEzXQU2UiTZMYRp72gFSAp4FKrgtvV8JnteRw",
+      "confirmation": "confirmed",
+      "evidence": {
+        "signature": "5GrL9JnSAHWjMdNj82DvW7MbTRLveyvS73YrXQXRK67P7WkyXWwbEzXQU2UiTZMYRp72gFSAp4FKrgtvV8JnteRw",
+        "slot": 506016435,
+        "blockTime": 1790797739,
+        "error": null,
+        "logs": [
+          "Program ComputeBudget111111111111111111111111111111 invoke [1]",
+          "Program ComputeBudget111111111111111111111111111111 success",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP invoke [1]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA invoke [2]",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA consumed 105 of 180945 compute units",
+          "Program TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA success",
+          "Program log: Kontor::RemainderReleased amount=200000000",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP consumed 19842 of 199857 compute units",
+          "Program CZvXgXBgFYfNef1uJYixrP86EbAcaRKoZ5sbH7qWPhyP success"
+        ],
+        "fee": 5000,
+        "preTokenBalances": [
+          {
+            "accountIndex": 1,
+            "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
+            "owner": "3DcmX4FL7ah9owhi5TmavczL1aEqGndw3Dmd1rzQ6Ud7",
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "uiTokenAmount": {
+              "amount": "0",
+              "decimals": 6,
+              "uiAmount": null,
+              "uiAmountString": "0"
+            }
+          },
+          {
+            "accountIndex": 2,
+            "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "uiTokenAmount": {
+              "amount": "200000000",
+              "decimals": 6,
+              "uiAmount": 200,
+              "uiAmountString": "200"
+            }
+          }
+        ],
+        "postTokenBalances": [
+          {
+            "accountIndex": 1,
+            "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
+            "owner": "3DcmX4FL7ah9owhi5TmavczL1aEqGndw3Dmd1rzQ6Ud7",
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "uiTokenAmount": {
+              "amount": "200000000",
+              "decimals": 6,
+              "uiAmount": 200,
+              "uiAmountString": "200"
+            }
+          },
+          {
+            "accountIndex": 2,
+            "mint": "E8VGbqzpghmVAmMjXxH9CYL7vevDiUeCfJxR7tMwfZcV",
+            "owner": "FfzWhYo4xc4h2yekNywxd4Xh33CTmQY1UcVhq129DJ1Z",
+            "programId": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+            "uiTokenAmount": {
+              "amount": "0",
+              "decimals": 6,
+              "uiAmount": null,
+              "uiAmountString": "0"
+            }
+          }
+        ]
+      },
+      "recordedAt": "2026-09-30T19:49:02.650Z"
     }
   ],
   "committedDocuments": {
@@ -649,8 +741,8 @@
       },
       "utf8": "{\"reference\":\"CN-204\",\"amount\":200}",
       "sha256": "3a928ce1fd7668176159f9640e92264662f4d54392f1ab9ac58e1155fe73501f",
-      "reason": "Accepted service credit",
-      "reasonSha256": "92287a7ec131b1b5a8aa0d9b1f2d727ae3c80468f20b65a2a8d14d9e5776de81"
+      "reason": "Service adjustment agreed with supplier",
+      "reasonSha256": "0ac0074000af5aba9567f233a6e24be44110e78b4d0bcc1b9912269163e80307"
     }
   }
 }

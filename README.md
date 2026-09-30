@@ -1,11 +1,11 @@
 # Kontor — guided product tour
 
-A self-paced replay of Kontor's payable workflow: two approvals for 1,000 Test USD, a 200 credit, rejection of the obsolete payment instruction, fresh approvals and settlement of 800.
-
 **[Explore the interactive product tour →](https://reaper2403.github.io/kontor-tour/)**
 
-Six chapters. No installation or wallet needed.
+Follow a 1,000 Test USD invoice, a 200 credit, rejection of its obsolete payment instruction, fresh approvals, an 800 supplier payment and a separate 200 return to the fixed treasury. The vault ends at zero.
 
-This repository contains the published static site only. Tour interactions navigate historical display snapshots; they never submit approvals or payments. The evidence download and explorer links refer to a recorded Solana devnet demonstration on 30 September 2026.
+Six chapters, eleven snapshots. No installation or wallet needed. This static replay uses actual app screens and recorded v2 Solana devnet receipts. Clicks submit no transactions. Intermediate screens are reconstructed from the recorded event history; missing historical balances are labeled honestly.
 
-Test USD is a custom token with no monetary value, not USDC. The demonstrated control applies to the program-controlled payable and vault. The prototype used server-held demo keys and a trusted upgrade authority and has not been security audited. No private keys, live backend or private application history are included here.
+[Public application source and setup](https://github.com/Reaper2403/kontor). This repository contains only the published static site, with no backend or signing keys.
+
+Test USD is synthetic and has no monetary value. The protected boundary is the program-controlled payable and vault. Demo roles use server-held keys and the program retains a trusted upgrade authority. It is unaudited; cancellation and unpaid withdrawals are unsupported. Historical v1 evidence remains archived separately and was not migrated.
